@@ -1,0 +1,27 @@
+<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= @user.name %>
+      </h1>
+    </section>
+  </aside>
+</div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d99984691.44669056!2d-90.81115830483704!3d12.845050324801695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1395192003712" width="800" height="600" frameborder="0" style="border:0"></iframe>
+ <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
+<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on right
+</button>
+    <% if @user.microposts.any? %>
+      <h3>Microposts (<%= @user.microposts.count %>)</h3>
+     
+        <%= render @microposts %>
+     
+      <%= will_paginate @microposts %>
+    <% end %>
+    
+  </div>
+</div>
+  
+ 
