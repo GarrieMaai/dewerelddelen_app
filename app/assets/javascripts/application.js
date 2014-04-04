@@ -12,8 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require galleria-1.3.5
-//= require galleria.classic
 //= require google.js
 
 
